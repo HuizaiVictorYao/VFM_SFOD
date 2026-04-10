@@ -86,7 +86,7 @@ pip install -e ./models/GroundingDINO
    - Train on the source dataset following fundamentalvision/Deformable-DETR.
    - Put the trained source weights under the matching experiment directory, named `source.pth`, for example:
      `./exps/city2foggy_resnet50/source.pth`
-   - Dataset paths are configured in `main_sfda.py:set_dataset_args` (you can modify them if needed). Our source-pretrained weights and target weights is coming soon
+   - Dataset paths are configured in `main_sfda.py:set_dataset_args` (you can modify them if needed). [Source-pretrained weights and target weights](https://drive.google.com/drive/folders/13WBIzQPXhlYH72v4szXrkMY6fT7srPWl?usp=sharing)
 
 2. Grounding DINO weights:
    - Download the official weights and place them under `models/GroundingDINO/weights`, for example:
@@ -96,7 +96,7 @@ pip install -e ./models/GroundingDINO
 ## Training
 
 1. Source Pretraining: Please use the source-pretrained weights or follow [Deformable DETR](https://github.com/fundamentalvision/Deformable-DETR) to train your source-pretrained weight and put it
-in the correspoinding directory, for example,  `./exps/city2foggy_resnet50/source.pth`
+in the corresponding directory, for example,  `./exps/city2foggy_resnet50/source.pth`
 
 2. Source-free adaptation:
 ```bash
